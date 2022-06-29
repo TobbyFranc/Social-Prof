@@ -1,0 +1,285 @@
+:root {
+  --VeDrkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DrkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./social-proof-section-master/images/bg-pattern-top-desktop.svg),
+    url(./social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto, contain;
+  background-position: top left, bottom right;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "League Spartan";
+  /*font-size: 15px;*/
+}
+
+main {
+  margin: 80px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.text {
+  width: 30%;
+  text-align: left;
+  margin: 50px;
+}
+
+.text h1 {
+  font-weight: 700px;
+  margin-right: 60px;
+  font-size: 50px;
+  color: var(--VeDrkMagenta);
+}
+
+.text p {
+  /*font-size: 15px;*/
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--DrkGrayishMagenta);
+}
+
+.rating {
+  min-width: 32%;
+  /*justify-content: end;*/
+  margin: 30px;
+  padding: 0;
+}
+
+.reviews,
+.reportGu,
+.besttech {
+  /*float: left;*/
+  background-color: var(--LightGrayishMagenta);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.reviews {
+  margin: 0 80px 20px 0;
+}
+
+.reportGu {
+  margin: 20px 30px 20px 40px;
+}
+
+.besttech {
+  margin: 20px 0px 20px 80px;
+}
+
+.reviews h2,
+.reportGu h2,
+.besttech h2 {
+  font-weight: 700px;
+  font-size: 15px;
+  color: var(--VeDrkMagenta);
+  margin-left: 8px;
+}
+
+.rating .imag .stars {
+  margin: 4px;
+}
+
+.customers {
+  display: flex;
+  width: 80%;
+}
+
+.colton,
+.irene,
+.anne {
+  background-color: var(--VeDrkMagenta);
+  border-radius: 12px;
+  /*margin: 30px;*/
+  color: var(--White);
+  padding: 14px;
+}
+
+.colton {
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.irene {
+  margin: 10px 30px 10px 0;
+  /*margin-top: 10px;
+    margin-right: 30px;*/
+}
+
+.anne {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+nav img {
+  margin: 7px;
+  padding: 7px;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+nav li {
+  list-style: none;
+  position: relative;
+  left: 10px;
+}
+
+nav .name {
+  font-weight: 600;
+}
+
+nav .verify {
+  color: var(--SoftPink);
+  margin-top: 4px;
+}
+
+.customers p {
+  padding: 0 0 20px 0;
+  line-height: 1.6rem;
+}
+
+/*footer{
+    position: absolute;
+    bottom: 0;
+}*/
+
+footer p {
+  color: var(--DrkGrayishMagenta);
+  margin: 0 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--SoftPink);
+  padding: 4px;
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    background-image: url(./social-proof-section-master/images/bg-pattern-top-mobile.svg), url(./social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto, contain;
+    background-position: top left, bottom right;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "League Spartan";
+  }
+
+  main {
+    margin: 10px;
+    box-sizing: border-box;
+    min-width: 100vw;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  .text h1 {
+    font-weight: 700px;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    color: var(--VeDrkMagenta);
+    text-align: center;
+  }
+
+  .text p {
+    /*font-size: 15px;*/
+    font-weight: 300;
+    margin-top: 2px;
+    padding: 0 40px;
+    color: var(--DrkGrayishMagenta);
+    justify-content: center;
+  }
+
+  .rating {
+    flex-direction: column;
+    min-width: 50%;
+    justify-content: center;
+    margin: 10px;
+    padding: 0;
+  }
+
+  .reviews,
+  .reportGu,
+  .besttech {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .reviews h2,
+  .reportGu h2,
+  .besttech h2 {
+    font-weight: 700px;
+    font-size: 15px;
+    color: var(--VeDrkMagenta);
+    margin-left: 8px;
+  }
+
+  .rating .imag .stars {
+    margin: 4px;
+  }
+
+  .customers {
+    flex-direction: column;
+    margin: 10px;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .colton,
+  .irene,
+  .anne {
+  background-color: var(--VeDrkMagenta);
+  border-radius: 12px;
+  color: var(--White);
+  justify-content: center;
+  width: 80%;
+}
+
+footer p{
+    font-size: smaller;
+    justify-content: center;
+    min-width: 100%;
+    text-align: center;
+}
+}
